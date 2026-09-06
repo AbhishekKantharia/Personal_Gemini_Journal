@@ -23,7 +23,7 @@ export function initGemini(apiKey) {
   }
   genAI = new GoogleGenerativeAI(apiKey);
   model = genAI.getGenerativeModel({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-3.6-flash',
     systemInstruction: JOURNAL_SYSTEM_PROMPT,
   });
   console.log('[Gemini] AI model initialized');
