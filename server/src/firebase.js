@@ -22,7 +22,7 @@ export function initFirebase() {
     credential: cert({ projectId, clientEmail, privateKey }),
   });
 
-  db = getFirestore(firebaseApp);
+  db = getFirestore(firebaseApp, 'default');
   auth = getAuth(firebaseApp);
 
   console.log('[Firebase] Admin SDK initialized');
