@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "authorizedDomains": [
+      "localhost",
+      "personal-gemini-journal.vercel.app",
+      "personal-gemini-journal-gallagherandmohan.vercel.app"
+    ],
+    "providers": {
+      "anonymous": false,
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Personal Gemini Journal",
+        "supportEmail": "abhishek11111997@gmail.com"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gemini-journal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=client",
+    "start": "node server/src/index.js",
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
